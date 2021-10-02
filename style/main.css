@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #e50914;
+  --black: #141414;
+}
+
+body {
+  background: var(--black);
+  font-family: 'Arial', Times, serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 6px;
+  color: var(--red);
+  font-family: 'Arial Black', Times;
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #fff;
+  font-size: 17px;
+}
+
+/*filme principal*/
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url('../img/fundolacasadepapel.jpg');
+
+  height: 500px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .description {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.title {
+  margin-top: 5%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.titulos {
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  margin-left: 15px;
+}
+
+.button {
+  background-color: rgb(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: 0.3s ease all;
+  margin-top: 6px;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.button i {
+  margin-right: 8px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.filme-principal .container {
+  width: 50%;
+}
+
+.box-film {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carousel-film {
+  margin-top: 5px;
+}
+
+.footer {
+  padding: 20px;
+}
+
+.rodape {
+  margin-top: 10px;
+}
+
+.paragrafo {
+  margin-top: 30px;
+}
+
+i {
+  color: #aaa;
+  display: inline-block;
+  padding: 20px 20px;
+  margin-top: 15px;
+}
+
+#logo {
+  color: var(--red);
+  font-size: 35px;
+}
+
+i:hover {
+  color: #fff;
+}
+
+/*RESPONSIVIDADE*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .button {
+    padding: 10px 30px;
+    width: 250px;
+  }
+  .filme-principal {
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .button {
+    padding: 10px 30px;
+    width: 300px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .button {
+    margin-top: 10px;
+    width: 300px;
+    padding: 15px 30px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .button {
+    margin-top: 10px;
+    width: 300px;
+    padding: 15px 30px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .description {
+    width: 50%;
+  }
+  header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header nav a {
+    margin-right: 45px;
+  }
+  .button {
+    margin-top: 10px;
+    width: 300px;
+    padding: 15px 30px;
+  }
+}
