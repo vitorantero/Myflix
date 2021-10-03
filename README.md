@@ -8,7 +8,7 @@
 <br>
 
 <p align="center">
-  <img alt="dev.finances" src="./img/museu.png" width="100%">
+  <img alt="myflix" src="./img/finallogo.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
